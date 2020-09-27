@@ -15,6 +15,7 @@ Detta är mjukvaran som kör på vår 3D-skrivare av märket Wanhao Duplicator i
 1. Koppla in 3D-skrivaren med ström och koppla till datorn via USB. Starta 3D-skrivaren med strömbrytaren.
 1. I VS Code, Tryck Marlin: Upload i Auto Build Marlin.
 Koden kommer att kompileras igen, och sedan laddas upp till skrivaren via USB. När allt är uppladdat kommer den läsa allt från skrivaren för att verifiera att skrivningen blev korrekt.
+1. När firmware är flashat, så kan du behöva köra "Initialize EEPROM" på skrivaren för att ersätta sparade inställningar i skrivaren från default-inställningarna i firmware (annars kommer gamla värden/inställningar ofta gälla, t.ex e-steps). Detta gör du genom att i skrivarens meny välja "Configuration/Advanced Settings/Initialize EEPROM", tryck sedan "Init". 
 
 ## License
 
