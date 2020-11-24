@@ -2,6 +2,12 @@
 
 Detta är mjukvaran som kör på vår 3D-skrivare av märket Wanhao Duplicator i3 (inte plus). Det är en fork av Marlin Firmware, med en egen konfiguration. För att uppgradera till en senare version, merga in senaste ändringarna från Marlin repot och anpassa konfiguration efter eventuella förändringar.
 
+```
+git remote -v (denna ska lista en upstream branch "MarlinFirmware/Marlin")
+git fetch upstream
+git merge upstream/2.0.x
+```
+
 **OBS:** Bootloader är redan installerat (med hjälp av en Arduino as ISP), så man behöver bara koppla skrivaren via USB för att flasha nytt firmware.
 
 1. Checka ut eller ladda ner github-projektet.
